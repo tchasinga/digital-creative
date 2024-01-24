@@ -13,6 +13,11 @@
     height: 100dvh;
 }
 
+.myBgmainB{
+    background:linear-gradient(80deg, #3F236D ,#70267f);
+    height: 100dvh;
+}
+
 .myText{
     color: #F06A15;
 }

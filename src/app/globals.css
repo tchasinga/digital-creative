@@ -44,3 +44,9 @@
     left: 35%;
     transform: translate(-50%, -50%);
 }
+
+.bg-red-600{
+    background: rgba(0, 0, 0, 0.404);
+    backdrop-filter: blur(10px);
+    transform: rotate(280deg);
+}

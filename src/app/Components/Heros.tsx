@@ -8,7 +8,7 @@ export default function Heros() {
   return (
     <div className='w-full relative myBgmain'>
 
-        <div className="flex items-center justify-between max-w-5xl mx-auto centeredDive">
+        <div className="flex items-center justify-between max-w-5xl mx-auto centeredDive ">
             
             <div>
               {/* First part of is added now...*/}
@@ -39,6 +39,8 @@ export default function Heros() {
               </div>
             </div>
         </div>
+
+        <div className="w-[200px] h-[200px] bg-red-600 absolute rounded-full bottom-[70%] right-[95%]"></div>
 
     </div>
   )

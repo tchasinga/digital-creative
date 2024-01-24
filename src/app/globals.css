@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
 
 .myBgmain{
     background:linear-gradient(80deg, #70267f, #3F236D);
@@ -16,7 +17,6 @@
 
 .myBgmainB{
     background:linear-gradient(80deg, #3F236D ,#70267f);
-    height: 100dvh;
 }
 
 .myText{
@@ -78,11 +78,10 @@
 
 .mygridtemplate{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    width: 40%;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     gap: 10px;
 }
 
-.mygridtemplate div{
-    background: #413f3d;
+.mygridtemplate .oneGrid{
+    background:linear-gradient(80deg, #70267f, #0f0702);
 }

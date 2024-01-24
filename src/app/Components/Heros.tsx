@@ -1,6 +1,8 @@
 import React from 'react'
 import { FaPhone,  FaCirclePlay} from "react-icons/fa6";
 import 'animate.css';
+import Image from "next/image";
+import myBusness from '../Images/pexelstimamiroshniche.jpg'
 
 export default function Heros() {
   return (
@@ -31,7 +33,11 @@ export default function Heros() {
               </div>
             </div>
 
-            <div></div>
+            <div>
+              <div className="mywidthFillGet">
+                <Image src={myBusness} alt='' className='object-cover mywidthFill w-[500px] h-[500px]'/>
+              </div>
+            </div>
         </div>
 
     </div>

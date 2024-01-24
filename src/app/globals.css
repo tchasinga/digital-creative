@@ -31,3 +31,9 @@
     --animate-duration: 2.5s;
     animation-duration: 2.5s;
 }
+
+.mywidthFill{
+    border-radius: 50%;
+    border: #F06A15 3px solid;
+    padding: 10px;
+}

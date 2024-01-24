@@ -31,6 +31,11 @@
     color: #cbd6db;
 }
 
+.bgCodeOfBackground{
+    background: #F6F7F9;
+    height: 100dvh;
+}
+
 .animate__heartBeat{
     animation-iteration-count: infinite;
     animation-delay: 2s;

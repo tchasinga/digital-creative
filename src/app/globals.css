@@ -64,3 +64,8 @@
     background: rgba(0, 0, 0, 0.17);
     backdrop-filter: blur(5px);
 }
+
+.bordering{
+    border: #0f0702 2px solid;
+    width: 50%;
+}

@@ -26,14 +26,14 @@ export default function Navbars() {
         <ul className="flex items-center justify-center gap-4">
           <li className="flex items-center gap-2">
             <p>
-              <FaPhone className="text-lg text-black" />{" "}
+              <FaPhone className="text-lg text-black" />
             </p>
             <p>+250 7872 890 28</p>
           </li>
           <Tooltip title="click here to sent an e-mail" arrow placement="bottom">
             <li>
               <p className="cursor-pointer">
-                <MdMarkEmailUnread className="text-lg text-black" />{" "}
+                <MdMarkEmailUnread className="text-lg text-black" />
               </p>
             </li>
           </Tooltip>

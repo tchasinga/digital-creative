@@ -19,9 +19,22 @@ export default function Winning() {
                 <p className='text-xs text-slate-900'>Digital Analysis</p>
             </div>
           </div>
-           
             {/* Seconds div is show-up */}
+         <div className="">
+            <div className="flex flex-col">
+                <div className="flex items-center gap-3">
+                    <hr className='w-[100px]'/>
+                    <h3>About us</h3>
+                </div>
+                <div className="flex flex-col items-center ">
+                    <h3 className='text-slate-900 text-xl'>We Are Award Winning SEO <br/> Company Sice 2010</h3>
+            </div>
+         </div>
+         <div className="text-xs flex flex-col items-center">
+          <p>Over 20 years working in SEO oriented services developing <br/> high-quality contents traffics to your website</p>
+         </div>
        </div>
+    </div>
     </div>
   )
 }

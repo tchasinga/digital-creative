@@ -17,7 +17,7 @@ export default function Heros() {
               </div>
 
               <div className="">
-                <p>Our SEO services help drive traffic to your website by improving keyword rankings in search engines..</p>
+                <p>Our SEO services help drive traffic to your website by <br /> improving keyword rankings in search engines..</p>
               </div>
             </div>
 

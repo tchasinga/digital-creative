@@ -59,3 +59,8 @@
 .bg-slate-950{
     background:linear-gradient(480deg, #F06A15, #0f0702);
 }
+
+.bg-blackig{
+    background: rgba(0, 0, 0, 0.17);
+    backdrop-filter: blur(5px);
+}

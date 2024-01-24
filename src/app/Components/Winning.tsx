@@ -14,8 +14,9 @@ export default function Winning() {
                 <Image src={myBusness} alt='' className='object-cover rounded-[50%] w-[500px] h-[500px] '/>
                 </div>
             </div>
-            <div className="bg-black flex justify-center items-center py-2 w-[10%] h-[100%]">
-                <h3>900+</h3>
+            <div className="bg-blackig flex flex-col justify-center items-center py-2 w-[130px] h-[130px] absolute rounded-full bottom-[15%] right-[70%]">
+                <h3 className='font-semibold text-slate-900'>+900 k</h3>
+                <p className='text-xs text-slate-900'>Digital Analysis</p>
             </div>
           </div>
            

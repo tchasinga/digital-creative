@@ -14,6 +14,9 @@ export default function Winning() {
                 <Image src={myBusness} alt='' className='object-cover rounded-[50%] w-[500px] h-[500px] '/>
                 </div>
             </div>
+            <div className="bg-black flex justify-center items-center py-2 w-[10%] h-[100%]">
+                <h3>900+</h3>
+            </div>
           </div>
            
             {/* Seconds div is show-up */}

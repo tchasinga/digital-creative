@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Heros() {
   return (
-    <div className='w-full relative'>
+    <div className='w-full relative myBgmain'>
 
         <div className="">
             

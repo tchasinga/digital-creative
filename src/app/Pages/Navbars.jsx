@@ -7,7 +7,7 @@ export default function Navbars() {
   return (
     <div className='max-w-5xl mx-auto p-4 flex items-center justify-between w-full'>
 
-     <div className="flex items-center">
+     <div className="flex items-center gap-2">
         <TbBrandDolbyDigital className="text-4xl text-black" />
         <p>Digital</p>
      </div>

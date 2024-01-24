@@ -3,8 +3,11 @@ import { TbBrandDolbyDigital } from "react-icons/tb";
 
 export default function Navbars() {
   return (
-    <div>
-      <TbBrandDolbyDigital />
+    <div className='max-w-4xl mx-auto'>
+        
+     <div className="">
+     </div>
+
     </div>
   )
 }

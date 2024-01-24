@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaPhone,  FaCirclePlay} from "react-icons/fa6";
+import 'animate.css';
 
 export default function Heros() {
   return (
@@ -26,7 +27,7 @@ export default function Heros() {
                <div className="myTextbg py-2 px-5 text-white font-semibold text-xs">
                   <p>Get Started</p>
                </div>
-                <p><FaCirclePlay className='myColorIc text-3xl'/></p>
+                <p><FaCirclePlay className='myColorIc text-3xl animate__heartBeat animate__animated cursor-pointer'/></p>
               </div>
             </div>
 

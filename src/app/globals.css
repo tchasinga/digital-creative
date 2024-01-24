@@ -24,3 +24,10 @@
 .myColorIc{
     color: #cbd6db;
 }
+
+.animate__heartBeat{
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    --animate-duration: 2.5s;
+    animation-duration: 2.5s;
+}

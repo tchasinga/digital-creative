@@ -9,7 +9,7 @@ export default function Navbars() {
 
      <div className="flex items-center gap-2">
         <TbBrandDolbyDigital className="text-4xl text-black" />
-        <p>Digital</p>
+        <p className='font-medium'>Digital</p>
      </div>
 
      <div className="font-medium text-sm">

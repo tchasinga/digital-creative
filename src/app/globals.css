@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.myBgmain{
+    background:linear-gradient(80deg, #70267f, #3F236D);
+    height: 100dvh;
+}
+
+.myBgmainB{
+    background:linear-gradient(80deg, #3F236D ,#70267f);
+}
+
+.myText{
+    color: #F06A15;
+}
+
+.myTextbg{
+    background: #F06A15;
+}
+
+.myColorIc{
+    color: #cbd6db;
+}
+
+.animate__heartBeat{
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    --animate-duration: 2.5s;
+    animation-duration: 2.5s;
+}
+
+.mywidthFill{
+    border-radius: 50%;
+    border: #F06A15 3px solid;
+    padding: 10px;
+}
+
+.centeredDive{
+    position: relative;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.bg-red-600{
+    background: rgba(0, 0, 0, 0.404);
+    backdrop-filter: blur(10px);
+    transform: rotate(280deg);
+}
+
+.bg-black{
+    background: rgba(0, 0, 0, 0.404);
+    backdrop-filter: blur(10px);
+}
+
+.bg-slate-950{
+    background:linear-gradient(480deg, #F06A15, #0f0702);
+}
+
+.bg-blackig{
+    background: rgba(0, 0, 0, 0.17);
+    backdrop-filter: blur(5px);
+}
+
+.bordering{
+    border: #0f0702 2px solid;
+    width: 50%;
+}
+
+.mygridtemplate{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 10px;
+}
+
+.mygridtemplate .oneGrid{
+    background:linear-gradient(80deg, #70267f, #0f0702);
+}

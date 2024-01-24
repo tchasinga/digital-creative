@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 *{
     margin: 0;
     padding: 0;
@@ -73,4 +74,15 @@
 .bordering{
     border: #0f0702 2px solid;
     width: 50%;
+}
+
+.mygridtemplate{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: 40%;
+    gap: 10px;
+}
+
+.mygridtemplate div{
+    background: #413f3d;
 }

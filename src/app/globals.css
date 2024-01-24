@@ -55,3 +55,7 @@
     background: rgba(0, 0, 0, 0.404);
     backdrop-filter: blur(10px);
 }
+
+.bg-slate-950{
+    background:linear-gradient(480deg, #F06A15, #0f0702);
+}

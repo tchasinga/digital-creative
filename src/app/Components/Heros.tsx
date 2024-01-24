@@ -26,7 +26,7 @@ export default function Heros() {
               </div>
 
               <div className="flex items-center gap-5">
-               <div className="myTextbg py-2 px-5 text-white font-semibold text-xs">
+               <div className="myTextbg py-2 px-5 text-white font-semibold text-xs rounded">
                   <p>Get Started</p>
                </div>
                 <p><FaCirclePlay className='myColorIc text-3xl animate__heartBeat animate__animated cursor-pointer'/></p>

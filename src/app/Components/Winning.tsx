@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Winning() {
   return (
-    <div>
+    <div className='w-full bg-white'>
       
     </div>
   )

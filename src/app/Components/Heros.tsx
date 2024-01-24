@@ -1,10 +1,19 @@
-import React from 'react'
+"use client";
+
+import React, { useState } from 'react'
 import { FaPhone,  FaCirclePlay} from "react-icons/fa6";
 import 'animate.css';
 import Image from "next/image";
 import myBusness from '../Images/pexelstimamiroshniche.jpg'
 
 export default function Heros() {
+
+  const [displayVideo, setDisplayVideo] = useState(false);
+
+  const hendlerShowVideo = () => {
+    setDisplayVideo(!displayVideo)
+  }
+
   return (
     <div className='w-full relative myBgmain'>
 
@@ -29,7 +38,7 @@ export default function Heros() {
                <div className="myTextbg py-2 px-5 text-white font-semibold text-xs rounded">
                   <p>Get Started</p>
                </div>
-                <p><FaCirclePlay className='myColorIc text-3xl animate__heartBeat animate__animated cursor-pointer'/></p>
+                <p><FaCirclePlay onClick={hendlerShowVideo} className='myColorIc text-3xl animate__heartBeat animate__animated cursor-pointer'/></p>
               </div>
             </div>
 

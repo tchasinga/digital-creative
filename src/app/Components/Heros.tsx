@@ -5,7 +5,7 @@ import { FaPhone,  FaCirclePlay} from "react-icons/fa6";
 import 'animate.css';
 import Image from "next/image";
 import myBusness from '../Images/pexelstimamiroshniche.jpg';
-import myVideo from "../video/thinking.mp4"  
+import myVideo from "../video/thinking.mp4"
 
 export default function Heros() {
 

@@ -26,7 +26,7 @@ export default function Heros() {
                <div className="myTextbg py-2 px-5 text-white font-semibold text-xs">
                   <p>Get Started</p>
                </div>
-                <p><FaCirclePlay className='myColorIc'/></p>
+                <p><FaCirclePlay className='myColorIc text-3xl'/></p>
               </div>
             </div>
 

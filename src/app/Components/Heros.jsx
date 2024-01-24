@@ -8,6 +8,9 @@ export default function Heros() {
             
             <div>
               {/* First part of is added now...*/}
+              <div className="">
+                
+              </div>
             </div>
 
             <div></div>

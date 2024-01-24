@@ -30,6 +30,7 @@ export default function Navbars() {
             <li>
                 <p><MdMarkEmailUnread className="text-lg text-black" /> </p>
             </li>
+            
             <li>Free Analysis</li>
         </ul>
      </div>

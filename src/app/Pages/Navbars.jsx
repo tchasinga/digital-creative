@@ -11,7 +11,7 @@ export default function Navbars() {
         <TbBrandDolbyDigital className="text-4xl text-black" />
      </div>
 
-     <div className="">
+     <div className="font-medium text-sm">
         <ul className='flex items-center gap-4'>
             <li>Home</li>
             <li>About</li>
@@ -21,7 +21,7 @@ export default function Navbars() {
         </ul>
      </div>
 
-     <div className="">
+     <div className="font-medium text-sm">
         <ul className='flex items-center justify-center gap-4'>
             <li className='flex items-center gap-2'>
                 <p><FaPhone className="text-lg text-black" /> </p>
@@ -30,8 +30,8 @@ export default function Navbars() {
             <li>
                 <p><MdMarkEmailUnread className="text-lg text-black" /> </p>
             </li>
-            
-            <li>Free Analysis</li>
+
+            <li className='bg-cyan-900 text-white py-2 px-4 rounded-full'>Free Analysis</li>
         </ul>
      </div>
     </div>

@@ -5,8 +5,12 @@ export default function Heros() {
     <div className='w-full relative'>
 
         <div className="">
-             {/* First part of is added now...*/}
-             
+            
+            <div>
+              {/* First part of is added now...*/}
+            </div>
+
+            <div></div>
         </div>
 
     </div>

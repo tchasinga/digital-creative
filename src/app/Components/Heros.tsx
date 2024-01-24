@@ -4,14 +4,15 @@ import React, { useState } from 'react'
 import { FaPhone,  FaCirclePlay} from "react-icons/fa6";
 import 'animate.css';
 import Image from "next/image";
-import myBusness from '../Images/pexelstimamiroshniche.jpg'
+import myBusness from '../Images/pexelstimamiroshniche.jpg';
+import myVideo from "../video/thinking.mp4"  
 
 export default function Heros() {
 
   const [displayVideo, setDisplayVideo] = useState(false);
 
   const hendlerShowVideo = () => {
-    setDisplayVideo(!displayVideo)
+    setDisplayVideo(true)
   }
 
   return (
@@ -34,7 +35,7 @@ export default function Heros() {
                 <p>We are leading award-winning digital marketing agency and <br /> Inbound marketing experts since 2005</p>
               </div>
 
-              <div className="flex items-center gap-5">
+              <div className="flex items-center gap-5 relative">
                <div className="myTextbg py-2 px-5 text-white font-semibold text-xs rounded">
                   <p>Get Started</p>
                </div>
@@ -42,12 +43,20 @@ export default function Heros() {
               </div>
             </div>
 
+           
+
             <div>
               <div className="mywidthFillGet">
                 <Image src={myBusness} alt='' className='object-cover mywidthFill w-[500px] h-[500px]'/>
               </div>
             </div>
         </div>
+
+        {displayVideo && (
+                    <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-[9999] flex justify-center items-center">
+                        <iframe width="560" height="315" src={myVideo} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className="rounded-2xl"></iframe>
+                    </div>
+                )}
 
         <div className="w-[200px] h-[200px] bg-red-600 absolute rounded-full bottom-[70%] right-[95%]"></div>
 

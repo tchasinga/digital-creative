@@ -50,3 +50,8 @@
     backdrop-filter: blur(10px);
     transform: rotate(280deg);
 }
+
+.bg-black{
+    background: rgba(0, 0, 0, 0.404);
+    backdrop-filter: blur(10px);
+}

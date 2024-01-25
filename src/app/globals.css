@@ -113,6 +113,16 @@
   border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+.spining {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 
 /* my responsive */

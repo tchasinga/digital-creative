@@ -9,7 +9,7 @@ import { RiContactsFill } from "react-icons/ri";
 
 export default function FooterNav() {
   return (
-    <div className="footContainer  bg-blue-300 fixed bottom-0 left-0 right-0">
+    <div className="footContainer  bg-blue-300 fixed w-full bottom-0 left-0 right-0">
             <div className=" flex py-5 justify-evenly items-center ">
                  <div className="text-2xl">
                     <IoIosHome/>

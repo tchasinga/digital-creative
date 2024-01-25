@@ -14,7 +14,7 @@ const nextConfig = {
               esModule: false,
             },
           },
-        });
+        }); 
     
         // Fix for serverless environments, like Vercel
         if (!isServer) {

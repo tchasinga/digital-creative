@@ -13,7 +13,7 @@ export default function Navbars() {
       </div>
 
       <div className="font-medium text-sm">
-        <ul className="flex items-center gap-4">
+        <ul className="flex items-center gap-4 codeGap">
           <li>Home</li>
           <li>About</li>
           <li>Service</li>
@@ -24,7 +24,7 @@ export default function Navbars() {
 
       <div className="font-medium text-sm">
         <ul className="flex items-center justify-center gap-4">
-          <li className="flex items-center gap-2">
+          <li className="flex items-center gap-2 codeGap">
             <p>
               <FaPhone className="text-lg text-black" />
             </p>

@@ -3,8 +3,8 @@ import solution from '../Projects/ObjectTwo'
 
 export default function Ourservices() {
   return (
-    <div className='bgCodeOfBackground'>
-     <div className="max-w-5xl mx-auto">
+    <div className='bgCodeOfBackground py-32'>
+     <div className="max-w-5xl mx-auto ">
        <div className="flex flex-col justify-center text-center">
        <div className="flex items-center text-slate-400 gap-3 py-3">
          <hr className='w-[100px]'/>

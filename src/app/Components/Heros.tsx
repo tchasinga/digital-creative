@@ -6,6 +6,7 @@ import 'animate.css';
 import Image from "next/image";
 import myBusness from '../Images/pexelstimamiroshniche.jpg';
 import myVideo from '../video/thinking.mp4';
+import { motion } from "framer-motion"
 
 export default function Heros() {
 
@@ -15,10 +16,21 @@ export default function Heros() {
     setDisplayVideo(true)
   }
 
-  return (
-    <div className='w-full relative myBgmain'>
+  const variants = {
+    visible : {
+      opacity: 1,
+      x: 0,
+      y: 0,
+      transition : {type: "spring", stiffness: 100, damping:100},
+      // transition : {staggerChildren: 1}
+    },
+    hidden:{opacity : 0},
+  }
 
-        <div className="flex items-center justify-between max-w-5xl mx-auto centeredDive ">
+  return (
+    <div className='w-full relative myBgmain '>
+
+        <motion.div className="flex items-center justify-between max-w-5xl mx-auto  centeredDive py-32" initial="hidden" animate="visible" variants={variants}>
             
             <div>
               {/* First part of is added now...*/}
@@ -30,7 +42,7 @@ export default function Heros() {
                 <h1>We Grow Your Revenue With <br /> Results-driven SEO</h1>
               </div>
 
-              <div className="text-xs text-slate-300 font-medium my-5">
+              <div className="text-sm text-slate-300 font-medium my-5">
                 <p>Our SEO services help drive traffic to your website by <br /> Improving keyword rankings in search engines..</p>
                 <p>We are leading award-winning digital marketing agency and <br /> Inbound marketing experts since 2005</p>
               </div>
@@ -43,14 +55,12 @@ export default function Heros() {
               </div>
             </div>
 
-           
-
             <div>
               <div className="mywidthFillGet">
                 <Image src={myBusness} alt='' className='object-cover mywidthFill w-[500px] h-[500px]'/>
               </div>
             </div>
-        </div>
+        </motion.div>
 
         {displayVideo && (
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-[9999] flex justify-center items-center">

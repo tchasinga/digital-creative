@@ -2,86 +2,182 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.myBgmain {
+  background: linear-gradient(80deg, #70267f, #3f236d);
+  
+}
+
+.myBgmainB {
+  background: linear-gradient(80deg, #3f236d, #70267f);
+}
+
+.myText {
+  color: #f06a15;
+}
+
+.myTextbg {
+  background: #f06a15;
+}
+
+.myColorIc {
+  color: #cbd6db;
+}
+
+.bgCodeOfBackground {
+  background: #f6f7f9;
+}
+
+.animate__heartBeat {
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  --animate-duration: 2.5s;
+  animation-duration: 2.5s;
+}
+
+.mywidthFill {
+  border-radius: 50%;
+  border: #f06a15 3px solid;
+  padding: 10px;
 }
 
 
-.myBgmain{
-    background:linear-gradient(80deg, #70267f, #3F236D);
-    height: 100dvh;
+
+.bg-red-600 {
+  background: rgba(0, 0, 0, 0.404);
+  backdrop-filter: blur(10px);
+  transform: rotate(280deg);
 }
 
-.myBgmainB{
-    background:linear-gradient(80deg, #3F236D ,#70267f);
+.bg-black {
+  background: rgba(0, 0, 0, 0.404);
+  backdrop-filter: blur(10px);
 }
 
-.myText{
-    color: #F06A15;
+.bg-slate-950 {
+  background: linear-gradient(480deg, #f06a15, #0f0702);
 }
 
-.myTextbg{
-    background: #F06A15;
+.bg-blackig {
+  background: rgba(0, 0, 0, 0.17);
+  backdrop-filter: blur(5px);
 }
 
-.myColorIc{
-    color: #cbd6db;
+.bordering {
+  border: #0f0702 2px solid;
+  width: 50%;
 }
 
-.animate__heartBeat{
-    animation-iteration-count: infinite;
-    animation-delay: 2s;
-    --animate-duration: 2.5s;
-    animation-duration: 2.5s;
+.mygridtemplate {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 10px;
 }
 
-.mywidthFill{
-    border-radius: 50%;
-    border: #F06A15 3px solid;
-    padding: 10px;
+.mygridtemplate .oneGrid {
+  background: linear-gradient(80deg, #70267f, #0f0702);
 }
 
-.centeredDive{
+.mygridtemplateTlm {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  transition: all 0.5s ease;
+}
+
+.mygridtemplateTlm .shadow-lg {
+  transition: all 0.5s ease;
+}
+
+.mygridtemplateTlm .shadow-lg:hover {
+  will-change: transform;
+  transform: perspective(500px) rotateX(4.8deg) rotateY(10.23deg)
+    scale3d(1.01, 1.01, 1.01);
+  cursor: pointer;
+}
+
+.footContainer {
+  display: none;
+}
+
+.bg-blue-300 {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.spining {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* my responsive */
+
+@media only screen and (max-width: 468px) {
+  body {
+    width: 100%;
+    margin: 0 auto !important;
+  }
+
+  .centeredDive {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .centeredDive {
     position: relative;
     top: 50%;
-    left: 35%;
+    left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .centeredDiving {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pyAdmin {
+    padding-top: 25px;
+    width: 100%;
+  }
+
+  .codeGap {
+    display: none;
+  }
+
+  .myBgmain {
+    background: linear-gradient(80deg, #70267f, #3f236d);
+    height: 130dvh;
+  }
+
+  .mywidthFill {
+    width: 500px;
+    height: 500px;
+  }
+
+  .footContainer {
+    display: block;
+  }
 }
 
-.bg-red-600{
-    background: rgba(0, 0, 0, 0.404);
-    backdrop-filter: blur(10px);
-    transform: rotate(280deg);
-}
 
-.bg-black{
-    background: rgba(0, 0, 0, 0.404);
-    backdrop-filter: blur(10px);
-}
-
-.bg-slate-950{
-    background:linear-gradient(480deg, #F06A15, #0f0702);
-}
-
-.bg-blackig{
-    background: rgba(0, 0, 0, 0.17);
-    backdrop-filter: blur(5px);
-}
-
-.bordering{
-    border: #0f0702 2px solid;
-    width: 50%;
-}
-
-.mygridtemplate{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
-    gap: 10px;
-}
-
-.mygridtemplate .oneGrid{
-    background:linear-gradient(80deg, #70267f, #0f0702);
-}

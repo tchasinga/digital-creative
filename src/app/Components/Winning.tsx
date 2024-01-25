@@ -5,8 +5,8 @@ import myBusness from '../Images/pexelskindelmedia.jpg';
 export default function Winning() {
   return (
     <div className='w-full bg-white py-16'>
-       <div className="max-w-5xl mx-auto  flex items-center">
-       <div className="flex flex-row-reverse items-center gap-10 justify-center">
+      <div className="max-w-5xl mx-auto  flex items-center ">
+       <div className="flex flex-row-reverse items-center gap-10 justify-center centeredDiving">
             
        <div className="">
             <div className="">
@@ -44,7 +44,7 @@ export default function Winning() {
               <div className="mywidthFillGet">
                 <Image src={myBusness} alt='' className='object-cover mywidthFill w-[500px] h-[500px]'/>
               </div>
-              <div className="bg-blackig flex flex-col justify-center items-center py-2 w-[130px] h-[130px] absolute rounded-full bottom-[10%] right-[-5%]">
+              <div className="spining bg-blackig flex flex-col justify-center items-center py-2 w-[130px] h-[130px] absolute rounded-full bottom-[10%] right-[-5%]">
                 <h3 className='font-semibold text-slate-900'>+900 k</h3>
                 <p className='text-xs text-slate-900 font-semibold'>Digital Analysis</p>
             </div>

@@ -12,7 +12,7 @@ export default function Home() {
    <Winning />
    <Codedriving />
    <Ourservices />
-   <Swipper />
+   {/* <Swipper /> */}
   </>
   );
 }

@@ -105,6 +105,19 @@
   cursor: pointer;
 }
 
+.footContainer {
+  display: none;
+}
+
+.bg-blue-300 {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
 /* my responsive */
 
 @media screen and (max-width: 468px) {
@@ -141,7 +154,7 @@
     width: 100%;
   }
 
-  .codeGap{
+  .codeGap {
     display: none;
   }
 
@@ -150,9 +163,12 @@
     height: 130dvh;
   }
 
-  .mywidthFill{
+  .mywidthFill {
     width: 500px;
     height: 500px;
   }
 
+  .footContainer {
+    display: block;
+  }
 }

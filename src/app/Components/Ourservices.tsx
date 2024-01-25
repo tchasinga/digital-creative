@@ -1,4 +1,5 @@
 import React from 'react'
+import solution from '../Projects/ObjectTwo'
 
 export default function Ourservices() {
   return (
@@ -16,7 +17,25 @@ export default function Ourservices() {
 
        {/* Adding my grid side */}
 
-
+       <div className="">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {solution.map((solution, index) => (
+              <div key={index} className="bg-white rounded-lg shadow-lg p-5">
+                <div className="flex items-center justify-center">
+                  <div className="text-4xl text-orange-800">
+                    {solution.Icon}
+                  </div>
+                </div>
+               <div className="justify-center flex-col flex items-center text-center">
+               <div className="text-slate-900 text-xl font-semibold my-2">
+                  {solution.name}
+                </div>
+                <div className="text-slate-400 line-clamp-3">{solution.details}</div>
+               </div>
+              </div>
+            ))}
+          </div>
+       </div>     
     </div>
     </div>
   )

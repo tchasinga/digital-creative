@@ -10,6 +10,7 @@ import '../styles.css';
 import MySwipper from '../Projects/ObjectsThree'
 import Image from "next/image";
 
+
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
@@ -37,15 +38,13 @@ export default function Swipper() {
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >
-        {MySwipper.map((imagurl , i) => (
-              <SwiperSlide key={imagurl.id}>
-              <div className="h-[550px] relative object-cover" style={{background: `linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url(${imagurl.myImg}) center no-repeat`, backgroundSize: "cover",}}>
-                  <div className="text-white text-4xl absolute bottom-10 right-0 left-0 px-5 font-bold">
-                    
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
+       <Swiper spaceBetween={30} slidesPerView={1}>
+          {MySwipper.map((item) => (
+            <SwiperSlide key={item.id}>
+              <Image src={item.myImg} alt="Picture of the author" className='h-[550px] relative object-cover'/>
+            </SwiperSlide>
+          ))}
+    </Swiper>
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>
             <circle cx="24" cy="24" r="20"></circle>

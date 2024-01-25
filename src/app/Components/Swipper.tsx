@@ -7,6 +7,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import '../styles.css';
+import MySwipper from '../Projects/ObjectsThree'
+import Image from "next/image";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -35,12 +37,11 @@ export default function Swipper() {
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >
-        {sharing.imageUrls.map((imagurl) => (
-              <SwiperSlide key={imagurl}>
-                <div className="h-[550px] relative object-cover" style={{background: `linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url(${imagurl}) center no-repeat`, backgroundSize: "cover",}}>
+        {MySwipper.map((imagurl , i) => (
+              <SwiperSlide key={imagurl.id}>
+              <div className="h-[550px] relative object-cover" style={{background: `linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url(${imagurl.myImg}) center no-repeat`, backgroundSize: "cover",}}>
                   <div className="text-white text-4xl absolute bottom-10 right-0 left-0 px-5 font-bold">
-                     <h1>{sharing.publicrole}</h1>
-                     <h3 className="text-xs text-gray-500">{sharing.email}</h3>
+                    
                   </div>
                 </div>
               </SwiperSlide>

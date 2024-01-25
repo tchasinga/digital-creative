@@ -45,3 +45,5 @@ const solution = [
       "Creating a website involves several steps, from planning and design to development and deployment",
   },
 ];
+
+export default solution;

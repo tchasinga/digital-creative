@@ -144,4 +144,15 @@
   .codeGap{
     display: none;
   }
+
+  .myBgmain {
+    background: linear-gradient(80deg, #70267f, #3f236d);
+    height: 130dvh;
+  }
+
+  .mywidthFill{
+    width: 500px;
+    height: 500px;
+  }
+
 }

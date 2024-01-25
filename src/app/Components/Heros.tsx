@@ -30,7 +30,7 @@ export default function Heros() {
                 <h1>We Grow Your Revenue With <br /> Results-driven SEO</h1>
               </div>
 
-              <div className="text-xs text-slate-300 font-medium my-5">
+              <div className="text-sm text-slate-300 font-medium my-5">
                 <p>Our SEO services help drive traffic to your website by <br /> Improving keyword rankings in search engines..</p>
                 <p>We are leading award-winning digital marketing agency and <br /> Inbound marketing experts since 2005</p>
               </div>

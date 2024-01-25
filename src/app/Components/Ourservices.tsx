@@ -30,7 +30,7 @@ export default function Ourservices() {
                <div className="text-slate-900 text-xl font-semibold my-2">
                   {solution.name}
                 </div>
-                <div className="text-slate-400 line-clamp-3">{solution.details}</div>
+                <div className="text-slate-400 text-sm line-clamp-3">{solution.details}</div>
                </div>
               </div>
             ))}

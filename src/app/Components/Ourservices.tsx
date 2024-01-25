@@ -18,11 +18,11 @@ export default function Ourservices() {
        {/* Adding my grid side */}
 
        <div className="">
-          <div className="mygridtemplateTlm gap-4">
+          <div className="mygridtemplateTlm gap-4 py-10">
             {solution.map((solution, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg p-5">
                 <div className="flex items-center justify-center">
-                  <div className="text-4xl text-orange-800">
+                  <div className="text-4xl bg-blue-800 text-white p-3 rounded-full">
                     {solution.Icon}
                   </div>
                 </div>

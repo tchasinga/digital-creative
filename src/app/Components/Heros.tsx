@@ -5,8 +5,8 @@ import { FaPhone,  FaCirclePlay} from "react-icons/fa6";
 import 'animate.css';
 import Image from "next/image";
 import myBusness from '../Images/pexelstimamiroshniche.jpg';
-import myVideo from '../video/thinking.mp4';
 import { motion } from "framer-motion"
+import 
 
 export default function Heros() {
 
@@ -64,8 +64,12 @@ export default function Heros() {
 
         {displayVideo && (
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-[9999] flex justify-center items-center">
-                        <iframe width="560" height="315" src={myVideo} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className="rounded-2xl"></iframe>
-                    </div>
+                    <video width="560" height="315" controls className="rounded-2xl">
+                      <source src="./video/thinking.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  
                 )}
 
         <div className="w-[200px] h-[200px] bg-red-600 absolute rounded-full bottom-[70%] right-[95%]"></div>

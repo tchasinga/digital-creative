@@ -35,15 +35,16 @@ export default function Swipper() {
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {sharing.imageUrls.map((imagurl) => (
+              <SwiperSlide key={imagurl}>
+                <div className="h-[550px] relative object-cover" style={{background: `linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)), url(${imagurl}) center no-repeat`, backgroundSize: "cover",}}>
+                  <div className="text-white text-4xl absolute bottom-10 right-0 left-0 px-5 font-bold">
+                     <h1>{sharing.publicrole}</h1>
+                     <h3 className="text-xs text-gray-500">{sharing.email}</h3>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>
             <circle cx="24" cy="24" r="20"></circle>

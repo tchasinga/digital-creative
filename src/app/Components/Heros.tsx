@@ -16,9 +16,9 @@ export default function Heros() {
   }
 
   return (
-    <div className='w-full relative myBgmain'>
+    <div className='w-full relative myBgmain '>
 
-        <div className="flex items-center justify-between max-w-5xl mx-auto centeredDive py-10">
+        <div className="flex items-center justify-between max-w-5xl mx-auto  centeredDive py-32">
             
             <div>
               {/* First part of is added now...*/}
@@ -42,8 +42,6 @@ export default function Heros() {
                 <p><FaCirclePlay onClick={hendlerShowVideo} className='myColorIc text-3xl animate__heartBeat animate__animated cursor-pointer'/></p>
               </div>
             </div>
-
-           
 
             <div>
               <div className="mywidthFillGet">

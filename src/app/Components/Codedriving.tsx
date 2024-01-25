@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Codedriving() {
   return (
     <div className='myBgmainB'>
-      <div className="max-w-5xl mx-auto flex justify-between items-center py-40">
+      <div className="max-w-5xl mx-auto flex justify-between items-center py-40 centeredDiving">
         {/* New code is now add in section One */}
      <div className="">
      <div className="flex items-center text-slate-400 gap-3 py-3">

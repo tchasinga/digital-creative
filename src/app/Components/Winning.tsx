@@ -5,8 +5,8 @@ import myBusness from '../Images/pexelskindelmedia.jpg';
 export default function Winning() {
   return (
     <div className='w-full bg-white py-16'>
-       <div className="max-w-5xl mx-auto  flex items-center">
-       <div className="flex flex-row-reverse items-center gap-10 justify-center">
+      <div className="max-w-5xl mx-auto  flex items-center ">
+       <div className="flex flex-row-reverse items-center gap-10 justify-center centeredDiving">
             
        <div className="">
             <div className="">

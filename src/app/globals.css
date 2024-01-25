@@ -89,3 +89,8 @@
 .mygridtemplate .oneGrid{
     background:linear-gradient(80deg, #70267f, #0f0702);
 }
+
+.mygridtemplateTlm{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}

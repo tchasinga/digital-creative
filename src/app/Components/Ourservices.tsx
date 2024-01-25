@@ -18,7 +18,7 @@ export default function Ourservices() {
        {/* Adding my grid side */}
 
        <div className="">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="mygridtemplateTlm gap-4">
             {solution.map((solution, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg p-5">
                 <div className="flex items-center justify-center">

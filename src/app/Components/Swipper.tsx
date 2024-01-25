@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import './styles.css';
+import '../styles.css';
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -16,15 +16,15 @@ export default function Swipper() {
   const progressContent = useRef(null);
   const onAutoplayTimeLeft = (s, time, progress) => {
     progressCircle.current.style.setProperty('--progress', 1 - progress);
-    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+    progressContent.current.textContent = `${Math.ceil(time / 10000)}s`;
   };
   return (
-    <>
+    <div className='mainSwiper'>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 10000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -51,6 +51,6 @@ export default function Swipper() {
           <span ref={progressContent}></span>
         </div>
       </Swiper>
-    </>
+    </div>
   );
 }

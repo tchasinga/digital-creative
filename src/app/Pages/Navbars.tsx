@@ -28,7 +28,7 @@ export default function Navbars() {
             <p>
               <FaPhone className="text-lg text-black" />
             </p>
-            <p>+250 7872 890 28</p>
+            <p>+255 788 929 176</p>
           </li>
           <Tooltip title="click here to sent an e-mail" arrow placement="bottom">
             <li>

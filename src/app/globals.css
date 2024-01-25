@@ -33,6 +33,13 @@
   background: #f6f7f9;
 }
 
+.centeredDive{
+  position: relative;
+  top: 50%;
+  left: 0%;
+  transform: translate(-50%, -50%);
+}
+
 .animate__heartBeat {
   animation-iteration-count: infinite;
   animation-delay: 2s;
@@ -143,9 +150,11 @@
 
   .centeredDive {
     position: relative;
-    top: 50%;
-    left: 50%;
+    top: 0%;
+    left: 0%;
     transform: translate(-50%, -50%);
+    padding-top: 0rem;
+    padding-bottom: 0rem;
   }
 
   .centeredDiving {

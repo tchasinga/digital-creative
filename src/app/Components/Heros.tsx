@@ -6,13 +6,13 @@ import 'animate.css';
 import Image from "next/image";
 import myBusness from '../Images/pexelstimamiroshniche.jpg';
 import { motion } from "framer-motion"
-import 
+import MyVideo from "./video/thinking.mp4";
 
 export default function Heros() {
 
   const [displayVideo, setDisplayVideo] = useState(false);
 
-  const hendlerShowVideo = () => {
+  const hendlerShowVideo = () => { 
     setDisplayVideo(true)
   }
 
@@ -64,12 +64,8 @@ export default function Heros() {
 
         {displayVideo && (
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-[9999] flex justify-center items-center">
-                    <video width="560" height="315" controls className="rounded-2xl">
-                      <source src="./video/thinking.mp4" type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                  
+                        <iframe width="560" height="315" src={MyVideo} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  className="rounded-2xl"></iframe>
+                    </div>
                 )}
 
         <div className="w-[200px] h-[200px] bg-red-600 absolute rounded-full bottom-[70%] right-[95%]"></div>

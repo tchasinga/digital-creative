@@ -32,7 +32,7 @@ export default function Navbars() {
           </li>
           <Tooltip title="click here to sent an e-mail" arrow placement="bottom">
             <li>
-              <a target="_blank" href={`mailto:tchasingajacques@gmail.com`} >
+              <a target="_blank" href={`mailto:Mbugi48@outlook.com`} >
                  <MdMarkEmailUnread className="text-lg text-black" />
               </a> 
             </li>

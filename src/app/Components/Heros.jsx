@@ -64,7 +64,7 @@ export default function Heros() {
 
         {displayVideo && (
                     <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 z-[9999] flex justify-center items-center">
-                        <iframe width="560" height="315" src={MyVideo} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  className="rounded-2xl"></iframe>
+                        <iframe width="560" height="315" src={MyVideo} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className="rounded-2xl"></iframe>
                     </div>
                 )}
 

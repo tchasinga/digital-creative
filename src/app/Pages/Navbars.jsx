@@ -26,7 +26,7 @@ export default function Navbars() {
         <ul className="flex items-center justify-center gap-4">
           <li className="flex items-center gap-2 codeGap">
             <p>
-              <FaPhone className="text-lg text-black" />
+              <FaPhone className="text-lg text-black animate__swing animate__animated" />
             </p>
             <p>+255 788 929 176</p>
           </li>

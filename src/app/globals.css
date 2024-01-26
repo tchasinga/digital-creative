@@ -40,6 +40,13 @@
   animation-duration: 2.5s;
 }
 
+.animate__swing{
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+  --animate-duration: 2.5s;
+  animation-duration: 2.5s;
+}
+
 .mywidthFill {
   border-radius: 50%;
   border: #f06a15 3px solid;

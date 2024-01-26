@@ -9,7 +9,8 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import MySwipper from '../Projects/ObjectsThree'
-import './styles.css';
+import '../styles.css';
+import Image from "next/image";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
@@ -22,7 +23,7 @@ export default function Swipper() {
     progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
   };
   return (
-    <>
+    <div  className='mainSwiper'>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -38,15 +39,13 @@ export default function Swipper() {
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <Swiper spaceBetween={30} slidesPerView={1}>
+          {MySwipper.map((item) => (
+            <SwiperSlide key={item.id}>
+              <Image src={item.myImg} alt="Picture of the author" className='h-[550px] relative object-cover'/>
+            </SwiperSlide>
+          ))}
+    </Swiper>
         <div className="autoplay-progress" slot="container-end">
           <svg viewBox="0 0 48 48" ref={progressCircle}>
             <circle cx="24" cy="24" r="20"></circle>
@@ -54,6 +53,6 @@ export default function Swipper() {
           <span ref={progressContent}></span>
         </div>
       </Swiper>
-    </>
+    </div>
   );
 }
